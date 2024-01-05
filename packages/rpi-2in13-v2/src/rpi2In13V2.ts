@@ -15,7 +15,7 @@ export class Rpi2In13V2 implements DisplayDevice {
         if (this.colorMode !== ColorMode.Black) {
             throw new Error('Only black color mode is supported');
         }
-        this.driver = bindings('waveshare2in13v2.node');
+        this.driver = bindings('waveshare1in54v2.node');
         this.height = orientation === Orientation.Horizontal ? 122 : 250;
         this.width = orientation === Orientation.Horizontal ? 250 : 122;
     }

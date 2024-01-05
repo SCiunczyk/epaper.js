@@ -24,8 +24,8 @@ const deviceMap = new Map<string, (orientation?: Orientation, colorMode?: ColorM
 
 async function getNpid21in54V2(orientation?: Orientation, colorMode?: ColorMode): Promise<DisplayDevice> {
     try {
-        const { Npid21in54V2 } = await import('@epaperjs/npid2-1in54-v2');
-        return new Npid21in54V2(orientation, colorMode);
+        const { Npid21In54V2 } = await import('@epaperjs/npid2-1in54-v2');
+        return new Npid21In54V2(orientation, colorMode);
     } catch (e) {
         throw new Error('Failed to import @epaperjs/npid2-1in54-v2, make sure it is installed');
     }

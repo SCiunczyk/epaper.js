@@ -1,7 +1,7 @@
 {
     "targets": [
         {
-            "target_name": "waveshare2in13v2",
+            "target_name": "waveshare1in54v2",
             "cflags!": [
                 "-fno-exceptions",
                 "-Wextra"
@@ -12,7 +12,9 @@
                 "./src/c/DEV_Config.c",
                 "./src/c/EPD_1in54_V2.c",
                 "./src/c/dev_hardware_SPI.c",
-                "./src/c/RPI_sysfs_gpio.c"
+                "./src/c/RPI_sysfs_gpio.c",
+                "./src/c/sysfs_gpio.c",
+                "./src/c/sysfs_software.c"
             ],
             "defines": [
                 "NPPD2",
