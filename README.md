@@ -174,6 +174,7 @@ npm install --global @epaperjs/cli @epaperjs/rpi-7in5-v2
 | [Waveshare 3.7" hat](https://www.waveshare.com/3.7inch-e-paper-hat.htm)         | `rpi-3in7`     | `@epaperjs/rpi-3in7`     | black, 4gray |
 | [Waveshare 2.13" hat v2](https://www.waveshare.com/wiki/2.13inch_e-Paper_HAT)   | `rpi-2in13-v2` | `@epaperjs/rpi-2in13-v2` | black, red   |
 | [Waveshare 2.13" bc](<https://www.waveshare.com/wiki/2.13inch_e-Paper_HAT_(B)>) | `rpi-2in13-bc` | `@epaperjs/rpi-2in13-bc` | black        |
+| [Waveshare 1.54" v2](<https://www.waveshare.com/wiki/1.54inch_e-Paper_Module>)  | `npid2-1in54-v2` | `@epaperjs/npid2-1in54-v2` | black        |
 | [Waveshare 2.7"](https://www.waveshare.com/wiki/2.7inch_e-Paper_HAT)            | `rpi-2in7`     | `@epaperjs/rpi-2in7`     | black        |
 
 ### Adding Support For Additional Displays

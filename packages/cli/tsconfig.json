@@ -6,10 +6,16 @@
         "sourceMap": false,
         "declarationMap": false
     },
-    "include": ["src/**/*.ts", "src/**/*.js"],
+    "include": [
+        "src/**/*.ts",
+        "src/**/*.js"
+    ],
     "references": [
         {
             "path": "../core"
+        },
+        {
+            "path": "../npid2-1in54-v2"
         },
         {
             "path": "../rpi-2in13-v2"

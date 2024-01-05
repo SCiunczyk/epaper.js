@@ -13,6 +13,7 @@ export async function getDevice(
 }
 
 const deviceMap = new Map<string, (orientation?: Orientation, colorMode?: ColorMode) => Promise<DisplayDevice>>([
+    ['npid2-1in54-v2', getNpid21in54V2],
     ['rpi-2in13-v2', getRpi2in13V2],
     ['rpi-2in13-bc', getRpi2In13Bc],
     ['rpi-4in2', getRpi4In2],
@@ -20,6 +21,15 @@ const deviceMap = new Map<string, (orientation?: Orientation, colorMode?: ColorM
     ['rpi-2in7', getRpi2In7],
     ['rpi-3in7', getRpi3In7],
 ]);
+
+async function getNpid21in54V2(orientation?: Orientation, colorMode?: ColorMode): Promise<DisplayDevice> {
+    try {
+        const { Npid21in54V2 } = await import('@epaperjs/npid2-1in54-v2');
+        return new Npid21in54V2(orientation, colorMode);
+    } catch (e) {
+        throw new Error('Failed to import @epaperjs/npid2-1in54-v2, make sure it is installed');
+    }
+}
 
 async function getRpi2in13V2(orientation?: Orientation, colorMode?: ColorMode): Promise<DisplayDevice> {
     try {
